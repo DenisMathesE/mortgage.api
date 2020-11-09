@@ -1,0 +1,83 @@
+###
+
+POST http://api2.onlineipoteka.pro/setcompany
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":"161","bank_id":"1","company_id":"6","type":"appraisal"}
+
+###
+POST http://api2.onlineipoteka.pro/setcompany
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":"161","bank_id":"1","company_id":"13","type":"insurance"}
+
+###
+
+POST http://api2.onlineipoteka.pro/setdealdate
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":"161","bank_id":"1","deal_date":"1691297200"}
+
+###
+
+POST http://api2.onlineipoteka.pro/getfeedinfo
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":226, "bank_id_":16}
+
+###
+
+POST http://api2.onlineipoteka.pro/getorderstatushistory
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":161}
+
+###
+
+POST http://api2.onlineipoteka.pro/getorderstatus
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":161}
+
+###
+
+POST http://api2.onlineipoteka.pro/closeorder
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":256}
+
+###
+
+POST http://api2.onlineipoteka.pro/saveorder
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"borrowers":[{"fio":"Svetov Denis G","inn":"123456789012","live":{"address":"г Екатеринбург, пр-кт Академика Сахарова, д 53"},"type":1,"work":{"inn":"123456789012","org":"ООО ооо","post":"Сидатель","phone":"+7 902 875 56 04","sphere":"2","workers":"2","work_exp":"100","start_work":"2016-3-01","contract_type":"1","post_category":"2"},"files":{"passport":[{"ext":"png","data":"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IB2cksfwAACJlJREFUeJyVVllv3NYZ5b7v5MxwRhpJlq3Fu+ykioMmbmIg6EOCoA9F+9a\/Yv+K\/oC+JkBbFEXstg+ukzipK9txLMuybC0jjWbnkBxe7pdkKcMFktRO4w8gX+4FD+93zznfwYuiuPbqunr16o+svthz7cf24OWDvKKSJAmdfpqmeYEgKIY+r\/8uFlmWwTQNA5AAG8FJgiBe+pFXApQnA+4ovvupd\/8W6LcQnskxtkCLrMTL8yhMgLUbPLvvPrxpb96l68cZXvoO\/E8AiKLQ2bgN1m8JoO88+dYfPB48Xc8Jurf5jySKrG\/+1v7k97tb32zd+Gd7c0s2eH7uDEmQrwEQAGf45R+DwT6jKEGckYqQ9TuQYu7c\/ZKCCWhtu62WRuEEhuEFNESSP\/U2zXD\/e4iXA2R5Ntl71Lrzd4FiiiAgJSV0waFN3f7r7YvvvXnjs2+ZuFheMjjoJxhGiVz\/oF09c45RGziO\/3+AJI6c0TA63Ei2t7A4wgQuC4JeJnQ2DxWSbC40utuHeW9okTxL4jzPd31UqVcIWSOUGkGQ+Pcb9UOAkhuuPbx\/4w9oOthY7+91QkJScU2dk+SzZqXWUNX56gkSWZmZLmhm+uLy7YedPMQfDjLdZCedDbl2jGIF5KhT6PcAiiIPwsCf2IPNtXB\/3enuD10HtK1jJHLRrEoFSTV0z88DJAslzrcjSGqNWY1wknnPa\/dHMS025kRraHMkEjmTAkMRgi7bVQIdAcRJDOyRv\/m5\/c1158lXzsG+sw9aj1url0\/NNCpDlM8BxAQWi8OQFjcHbRoVdeAVGhdv93ZgPmsyC28td+8fDHd6ctLxv75etDcShihIDiNpvNRqaA\/A+mejm3+yu63CD8cg3xsHp9G0KqHs6aUYYogfewBkHF4JJs8Sf4nAAhZPvSD2c9wUtVMzfOD3n\/XDMFJn+Hxoj1zH3Vu3rbY8NV+e4GoC08G\/bu18vSYQtFVgFE0fO9Y8QYsDUsLy\/Iutx5xKT9PUA8+S6WKuMQO90ZoXnNK4EvL2qC9D1B\/4Z5vNcRy4gyGKJT6OcG6Uakbj\/HtHLcrzIrN73uY9VWZojqHyomnKSMEhCBNM4oop7Y6Hi3UNFkSR5EjfispLkyWTJvayuKrIpAOpnJQEBkrovfuPpikco5hJlMxeWOXnLxwBlDee81zW22BoqhNlVi5OcwJeNzAcZp5fZbHTc3PhJI2D9NF+HxlOumGo0jyZIjonKDlLBr5gyoUu4yBEzTqOpsB16tON2tsfUbKJl4ZZsipDSWfQdp3AcdGsbzVIZuIjRJQkCnV30CtKamcY2BuMwqI9dkZeXM8QgGYZQzyNbUaWBZD6fZdLY7A\/OIwJvaY1Ll4Qli9TDPeCpjlSRFjJ1fDrmxtZ6GkCLAQFkbUKCk2ZJWG2cTA6sDwFzzCakBmiGyN2ENI8M4XnaopMErbtuxQW7+73ra5lnFyqvnVFMGZKH3neIhSFSbz15V+ePrm38v6FheVmbXGGmtY3rXYXiwyxxsQ564TdSYQSeLDeygQ+ybMViZ3SVUKVvoVgx7dWLi0LhqI1Neb8Qkz4MISV2VMoThyxqDT7vDR3GLN5eu\/Tz6ET6Sg56jl8QjdSiEEQYeiD1gDiFEtTuC6laeJGsWiqdEVgI0+JoEpVMz\/LW9vr97f3NroixR6\/9D6nNV8IrbR+P\/SHD276O7txmFUpvlFtBr1hJQADmtmMfUwQxRDywN9x\/LKfMUqeE1i5bvB19dbOocZLuuVDWsGTxO5arKI3TI6iEXZqCcPII4DSf8L+s8M\/f5JPBvNnZgHHEAk0lmcRU8Y9sCiKOkOKHMtWNZyl5vLcLyBXUxebJp0VJyS+8HN6oclRRRL6A4pWhBg9PIi8ET21TAjac6uI4+DZmnewgZC0gCMplhWGJMV43JlEXhSy+AEaizkKaULSJEPgeY1hVYaG4VBgUpBldkGAhNfFUMb7T5\/m7pjiUNsF0uw8a54oaXrNB3b7q+vUqBcjBEfmMM4dK9Uh2+UltcE\/mAzKcSJM\/M0QaElC1gwmj56EwQxOAAtsIcA0RCtMWSfojYY6C0maC7wsyhHWkPTFnx15EQRO1nk8aR0GA2uEIpkX98dREYB6nUNqolCw9DhGwkjQdQUlvhq1KxmNJlCgeL7jsicWSBatpPb+Xv\/u7qBWE0Pg+2NXJTC9XlWWV\/AycpTWSprH2ZpCimgYRSRJDZ0EZRlj0Sh6zmQMmSxXmhViDByUdxDAcrUaAFSjEvU9N0FlMqfq1RtfPMAy7PiMrKIpLUszv\/qNculj5kjJ166ViYPmRMo4xh2\/YM6fQAVFmuZJg7pzpwu2OycFhuNoTKO9nuPGYOXyeWzkWB5kOIwVaDP0dtd3rq89vfK7K4wuTJ08a1z+0PjFr8WFS4JSKf\/1hZJLwhIkWU5tQqoVvHr4aK0\/9LqHNg+j7TKqSHjpPMRwmMcTZaYadgYKivlxNJGZtScdywV+lMoNPULxxSu\/FadOs6JGUSSKYj8cmUe6wHGSpo3ZRYNDVcxdrhIImaTOsAvx9YfbO+PInNYe\/Xt3f3c\/4FgCjNW6qAqYrrKLP393bvVDUTMpmnmeLb4\/Mr9b5eCmGDHwnMn6XTv0LCdsbQ\/PLTQ8XNxLsMWLczuP25DhGxUCQ+JSpOlgWFFZ492PlcYyRTE\/KbaUMTGBib9+R4YB5Dme5\/w0o2VVaFQ1ocwZxlRVSHp7LIVW8MKNEWF6WrrwAcu9JNy9IniV+wiGoqC9vxmMx2U4LTXWPLN0cvUtJPDn3ljNQqfwvc4QSGgB00x684qxtEqSr5PscJyIcMY+aCHVunL87MI7vzTPXear89rsaVafl8t3fVqfMr00l+YXau98xMv662XTI15RjDa\/WF953zy5KpmzNCeUtCMotuQbxfKc3uRnzuon35DnF1hl6qXBtKz\/AGloyO6ozT\/dAAAAAElFTkSuQmCC"}],"income_confirm":[{"ext":"png","data":"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IB2cksfwAACJlJREFUeJyVVllv3NYZ5b7v5MxwRhpJlq3Fu+ykioMmbmIg6EOCoA9F+9a\/Yv+K\/oC+JkBbFEXstg+ukzipK9txLMuybC0jjWbnkBxe7pdkKcMFktRO4w8gX+4FD+93zznfwYuiuPbqunr16o+svthz7cf24OWDvKKSJAmdfpqmeYEgKIY+r\/8uFlmWwTQNA5AAG8FJgiBe+pFXApQnA+4ovvupd\/8W6LcQnskxtkCLrMTL8yhMgLUbPLvvPrxpb96l68cZXvoO\/E8AiKLQ2bgN1m8JoO88+dYfPB48Xc8Jurf5jySKrG\/+1v7k97tb32zd+Gd7c0s2eH7uDEmQrwEQAGf45R+DwT6jKEGckYqQ9TuQYu7c\/ZKCCWhtu62WRuEEhuEFNESSP\/U2zXD\/e4iXA2R5Ntl71Lrzd4FiiiAgJSV0waFN3f7r7YvvvXnjs2+ZuFheMjjoJxhGiVz\/oF09c45RGziO\/3+AJI6c0TA63Ei2t7A4wgQuC4JeJnQ2DxWSbC40utuHeW9okTxL4jzPd31UqVcIWSOUGkGQ+Pcb9UOAkhuuPbx\/4w9oOthY7+91QkJScU2dk+SzZqXWUNX56gkSWZmZLmhm+uLy7YedPMQfDjLdZCedDbl2jGIF5KhT6PcAiiIPwsCf2IPNtXB\/3enuD10HtK1jJHLRrEoFSTV0z88DJAslzrcjSGqNWY1wknnPa\/dHMS025kRraHMkEjmTAkMRgi7bVQIdAcRJDOyRv\/m5\/c1158lXzsG+sw9aj1url0\/NNCpDlM8BxAQWi8OQFjcHbRoVdeAVGhdv93ZgPmsyC28td+8fDHd6ctLxv75etDcShihIDiNpvNRqaA\/A+mejm3+yu63CD8cg3xsHp9G0KqHs6aUYYogfewBkHF4JJs8Sf4nAAhZPvSD2c9wUtVMzfOD3n\/XDMFJn+Hxoj1zH3Vu3rbY8NV+e4GoC08G\/bu18vSYQtFVgFE0fO9Y8QYsDUsLy\/Iutx5xKT9PUA8+S6WKuMQO90ZoXnNK4EvL2qC9D1B\/4Z5vNcRy4gyGKJT6OcG6Uakbj\/HtHLcrzIrN73uY9VWZojqHyomnKSMEhCBNM4oop7Y6Hi3UNFkSR5EjfispLkyWTJvayuKrIpAOpnJQEBkrovfuPpikco5hJlMxeWOXnLxwBlDee81zW22BoqhNlVi5OcwJeNzAcZp5fZbHTc3PhJI2D9NF+HxlOumGo0jyZIjonKDlLBr5gyoUu4yBEzTqOpsB16tON2tsfUbKJl4ZZsipDSWfQdp3AcdGsbzVIZuIjRJQkCnV30CtKamcY2BuMwqI9dkZeXM8QgGYZQzyNbUaWBZD6fZdLY7A\/OIwJvaY1Ll4Qli9TDPeCpjlSRFjJ1fDrmxtZ6GkCLAQFkbUKCk2ZJWG2cTA6sDwFzzCakBmiGyN2ENI8M4XnaopMErbtuxQW7+73ra5lnFyqvnVFMGZKH3neIhSFSbz15V+ePrm38v6FheVmbXGGmtY3rXYXiwyxxsQ564TdSYQSeLDeygQ+ybMViZ3SVUKVvoVgx7dWLi0LhqI1Neb8Qkz4MISV2VMoThyxqDT7vDR3GLN5eu\/Tz6ET6Sg56jl8QjdSiEEQYeiD1gDiFEtTuC6laeJGsWiqdEVgI0+JoEpVMz\/LW9vr97f3NroixR6\/9D6nNV8IrbR+P\/SHD276O7txmFUpvlFtBr1hJQADmtmMfUwQxRDywN9x\/LKfMUqeE1i5bvB19dbOocZLuuVDWsGTxO5arKI3TI6iEXZqCcPII4DSf8L+s8M\/f5JPBvNnZgHHEAk0lmcRU8Y9sCiKOkOKHMtWNZyl5vLcLyBXUxebJp0VJyS+8HN6oclRRRL6A4pWhBg9PIi8ET21TAjac6uI4+DZmnewgZC0gCMplhWGJMV43JlEXhSy+AEaizkKaULSJEPgeY1hVYaG4VBgUpBldkGAhNfFUMb7T5\/m7pjiUNsF0uw8a54oaXrNB3b7q+vUqBcjBEfmMM4dK9Uh2+UltcE\/mAzKcSJM\/M0QaElC1gwmj56EwQxOAAtsIcA0RCtMWSfojYY6C0maC7wsyhHWkPTFnx15EQRO1nk8aR0GA2uEIpkX98dREYB6nUNqolCw9DhGwkjQdQUlvhq1KxmNJlCgeL7jsicWSBatpPb+Xv\/u7qBWE0Pg+2NXJTC9XlWWV\/AycpTWSprH2ZpCimgYRSRJDZ0EZRlj0Sh6zmQMmSxXmhViDByUdxDAcrUaAFSjEvU9N0FlMqfq1RtfPMAy7PiMrKIpLUszv\/qNculj5kjJ166ViYPmRMo4xh2\/YM6fQAVFmuZJg7pzpwu2OycFhuNoTKO9nuPGYOXyeWzkWB5kOIwVaDP0dtd3rq89vfK7K4wuTJ08a1z+0PjFr8WFS4JSKf\/1hZJLwhIkWU5tQqoVvHr4aK0\/9LqHNg+j7TKqSHjpPMRwmMcTZaYadgYKivlxNJGZtScdywV+lMoNPULxxSu\/FadOs6JGUSSKYj8cmUe6wHGSpo3ZRYNDVcxdrhIImaTOsAvx9YfbO+PInNYe\/Xt3f3c\/4FgCjNW6qAqYrrKLP393bvVDUTMpmnmeLb4\/Mr9b5eCmGDHwnMn6XTv0LCdsbQ\/PLTQ8XNxLsMWLczuP25DhGxUCQ+JSpOlgWFFZ492PlcYyRTE\/KbaUMTGBib9+R4YB5Dme5\/w0o2VVaFQ1ocwZxlRVSHp7LIVW8MKNEWF6WrrwAcu9JNy9IniV+wiGoqC9vxmMx2U4LTXWPLN0cvUtJPDn3ljNQqfwvc4QSGgB00x684qxtEqSr5PscJyIcMY+aCHVunL87MI7vzTPXear89rsaVafl8t3fVqfMr00l+YXau98xMv662XTI15RjDa\/WF953zy5KpmzNCeUtCMotuQbxfKc3uRnzuon35DnF1hl6qXBtKz\/AGloyO6ozT\/dAAAAAElFTkSuQmCC"}]},"snils":"999-999-999 12","income":{"asset":"0","outlay":"100000","confirm":"1","monthly":"140000","bankrupt":"2","bank_name":"Некий","additional":"10000"},"mobile":"+7 965 234 23 43","birthday":"1989-11-12","gov_duty":"1","passport":{"given":"УФМС Родины","serial":"6734 483830","take_date":"2012-12-12","unit_code":"660-007","birthplace":"Камневый водопат"},"childrens":"2","education":"3","citizenship":"1","registration":{"type":"1","address":"ул.Фурманова, д.9, кв.59"},"marriage_status":"1"},{"fio":"Она же","inn":"123456789012","type":2,"snils":"999-999-999 12 ","mobile":"+7 902 875 56 03","birthday":"1999-12-12","gov_duty":"2","passport":{"given":"УФМС Родины","serial":"7698768976","take_date":"2020-01-03","unit_code":"670-098","birthplace":"Средний запад"},"education":"2","use_money":2,"citizenship":"1","fio_changed":"1","family_contract":"2","fio_changed_date":"2019-03-14","fio_changed_reason":"1","fio_changed_last_fio":"длала","fio_changed_custom_reason":""},{"fio":"лорп лорд","inn":"123456789012","type":3,"work":{"inn":"1234567890","org":" гтщшгзтщшгз","post":"фываф ыва","phone":"+7 912 226 62 00","sphere":"2","workers":"1","work_exp":"56","start_work":"2020-1-01","contract_type":"3","post_category":"2"},"snils":"999-999-999 12","income":{"asset":"","outlay":"99","confirm":"2","monthly":"19999","bankrupt":"1","additional":"88"},"mobile":"+7 902 875 56 03","birthday":"1999-12-12","gov_duty":"2","passport":{"given":"ррл орол","serial":"1234567890","take_date":"2012-12-12","unit_code":"456-456","birthplace":"дорд лор"},"education":"4","citizenship":"1","fio_changed":"1","fio_changed_reason":"2","fio_changed_last_fio":" щшгзтщш","fio_changed_custom_reason":"ло лорп"}],"company":{"id":"1","name":"Лот Инфо"},"company_user":{"id":"2567","name":"Светличный Денис Георгиевич","mobile":"79122266200"},"order":{"sum":"3900000","matcap":"","period":"240","region":"6","target":"1","subsidy":"","pay_date":"12 марта","pay_type":"1","first_pay":"100000","object_price":"4000000","id":46, "mortgage_id_":226}}
+
+###
+
+POST http://api2.onlineipoteka.pro/getbanks
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"region":6}
+
+###
+
+POST http://api2.onlineipoteka.pro/getcompanies
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"region":6}
+###
+
+POST http://api2.onlineipoteka.pro/getorderinfo
+Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+{"mortgage_id":161, "bank_id_":16}
+
+###
+
+#POST http://api2.onlineipoteka.pro/sendmessagetobank
+#Authorization: ce4f27b14f419255b24ea5a87e23d11e
+
+#
+
+###
