@@ -108,7 +108,7 @@ class Order {
         if ( isset($this->data['borrowers']) && $this->id ) {
             foreach ( $this->data['borrowers'] as $key => $borrowerData ) {
                 if ( isset($borrowerData['files']) ) {
-                    $this->saveFiles($borrowerData['files'], $borrowerData['id']);
+                    $this->saveFiles($borrowerData['files'], $borrowerData['id']); 
                 }
             }
         }
@@ -598,8 +598,8 @@ class Order {
         $amWb = new ampq;
 
         $amWb->connectInfo = array(
-            array('host' => "192.168.0.52", 'port' => 5672, 'vhost' => "/", "user" => 'jesus', "password" => 'common' ),
-            array('host' => "192.168.1.52", 'port' => 5672, 'vhost' => "/", "user" => 'jesus', "password" => 'common' )
+            array('host' => "192.168.1.1", 'port' => 5777, 'vhost' => "/", "user" => 'jesus', "password" => 'common' ),
+            array('host' => "192.168.3.1", 'port' => 5777, 'vhost' => "/", "user" => 'jesus', "password" => 'common' )
         );
 
 //        include "/home/repo/parsers/wbRebbitList.php";
@@ -630,7 +630,7 @@ class Order {
                             "callback" => array(
                                 "exchange" => "",
                                 "queue" => "wbsMortFileSave",
-                                "msg" => ['fileLoaded' => $md5]
+                                "msg" => ['fileLoaded' => $md5] 
                             )
                         );
                         $res = $amWb->sendTask($sendData, 'fileServers_task');
